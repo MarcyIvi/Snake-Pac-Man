@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    margin-top: 2%;
+    background: rgb(4,0,29);
+    overflow: hidden;
+    background: linear-gradient(162deg, rgba(4,0,29,1) 0%, rgba(140,24,36,1) 60%, rgba(230,40,40,1) 100%);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+.painel {
+    margin: 10px 0;
+}
+
+.tabuleiro {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(30, 10px);
+    grid-template-rows: repeat(30, 10px);
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+}
+
+.food {
+    width: 13px;       
+    height: 13px;       
+    background-image: url('../img/fantasma1.png');
+    background-size: cover; 
+
+}
+
+.head {
+    background: rgb(242,255,71);
+background: linear-gradient(162deg, rgba(242,255,71,1) 28%, rgba(224,255,0,1) 75%);
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls i {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
